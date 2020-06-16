@@ -1,0 +1,19 @@
+Script started on 2020-04-16 10:45:23+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="158" LINES="33"]
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
+ad6259fd228bda74d110151d1d61fc04b8b8f56021b8e585594995beecfa75f0
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
+7630d4460f25efeee440ba9257afa0971e305f985e218ac76e0bfb30298fd6cb
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
+c780655492c5fba7695ff9962f9d02956f46d583bcbb56ec5dcf134397da1f21
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker stop ad6
+ad6
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ doi[Kcker stop 763
+763
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+c780655492c5        nginx               "nginx -g 'daemon of…"   42 seconds ago      Up 42 seconds               80/tcp              reverent_volhard
+7630d4460f25        nginx               "nginx -g 'daemon of…"   44 seconds ago      Exited (0) 8 seconds ago                        magical_albattani
+ad6259fd228b        nginx               "nginx -g 'daemon of…"   47 seconds ago      Exited (0) 21 seconds ago                       serene_dubinsky
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ exit
+
+Script done on 2020-04-16 10:46:32+03:00 [COMMAND_EXIT_CODE="0"]

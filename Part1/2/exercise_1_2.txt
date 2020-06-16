@@ -1,0 +1,21 @@
+Script started on 2020-04-16 10:49:13+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="158" LINES="33"]
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker rm c78
+c78
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker rm 763
+763
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker rm ad6
+ad6
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ r[Ks[Kdocker rmi nginx
+Untagged: nginx:latest
+Untagged: nginx@sha256:bc88c80325c8e6d05446fb042944e692b29916a39f11a276a59cca2a65ad7477
+Deleted: sha256:ed21b7a8aee9cc677df6d7f38a641fa0e3c05f65592c592c9f28c42b3dd89291
+Deleted: sha256:8a305f371a6c3c445a1dfc500c1364743868a269ab8cdaf95902692e82168352
+Deleted: sha256:d079ef06ec1f10a8050887365f9a940b39547ba6bcc46b16a463e740984f3223
+Deleted: sha256:c3a984abe8a88059915bb6c7a1d249fd1ccc16d931334ac8816540b0eb686b45
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ exit
+
+Script done on 2020-04-16 10:50:17+03:00 [COMMAND_EXIT_CODE="0"]
