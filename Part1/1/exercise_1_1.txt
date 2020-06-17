@@ -1,19 +1,29 @@
-Script started on 2020-04-16 10:45:23+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="158" LINES="33"]
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
-ad6259fd228bda74d110151d1d61fc04b8b8f56021b8e585594995beecfa75f0
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
-7630d4460f25efeee440ba9257afa0971e305f985e218ac76e0bfb30298fd6cb
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker run -d nginx
-c780655492c5fba7695ff9962f9d02956f46d583bcbb56ec5dcf134397da1f21
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker stop ad6
-ad6
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ doi[Kcker stop 763
-763
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
-c780655492c5        nginx               "nginx -g 'daemon of…"   42 seconds ago      Up 42 seconds               80/tcp              reverent_volhard
-7630d4460f25        nginx               "nginx -g 'daemon of…"   44 seconds ago      Exited (0) 8 seconds ago                        magical_albattani
-ad6259fd228b        nginx               "nginx -g 'daemon of…"   47 seconds ago      Exited (0) 21 seconds ago                       serene_dubinsky
-]0;mk@lubuntu-virtualbox: ~/DevOpsWithDocker/Part1[01;32mmk@lubuntu-virtualbox[00m:[01;34m~/DevOpsWithDocker/Part1[00m$ exit
+Script started on 2020-06-16 11:01:56+03:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="133" LINES="33"]
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker run -d nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
 
-Script done on 2020-04-16 10:46:32+03:00 [COMMAND_EXIT_CODE="0"]
+1B59a31e96f4: Pulling fs layer
+1B69e59170f7: Pulling fs layer
+1B9f1ec1d262: Pulling fs layer
+1Bf5ff4f210d: Pulling fs layer
+1BDigest:5sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d01336.672B/672B1MBB
+Status: Downloaded newer image for nginx:latest
+37825599a4803a00c8e1045cc957c56917a386a618e5a5ef318b1384a944f425
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker run -d nginx
+5da2107eb2562689c1db076a5fc94a4dc60694dde27e72fc23524ddedd8f04cd
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker run -d nginx
+00a0ad138bcc7d79b87151023b297d3056045bd82d723e2f2fb672a7bcb56bdd
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker stop 5da2
+5da2
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker stop 00a0
+00a0
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+00a0ad138bcc        nginx               "/docker-entrypoint.…"   53 seconds ago       Exited (0) 12 seconds ago                       vigilant_albattani
+5da2107eb256        nginx               "/docker-entrypoint.…"   55 seconds ago       Exited (0) 28 seconds ago                       elastic_mendel
+37825599a480        nginx               "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp              nifty_ishizaka
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/1$ exit
+exit
+
+Script done on 2020-06-16 11:03:51+03:00 [COMMAND_EXIT_CODE="0"]
