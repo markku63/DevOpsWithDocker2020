@@ -1,0 +1,19 @@
+Script started on 2020-06-23 10:24:25+03:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="133" LINES="33"]
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/8$ touch ./logs.txt
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/8$ docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^CClosing file
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/8$ cat logs.txt
+Tue, 23 Jun 2020 07:25:35 GMT
+Tue, 23 Jun 2020 07:25:38 GMT
+Tue, 23 Jun 2020 07:25:41 GMT
+Tue, 23 Jun 2020 07:25:44 GMT
+Secret message is:
+"Volume bind mount is easy"
+mk@lubuntu-virtualbox:~/DevOpsWithDocker/Part1/8$ exit
+
+Script done on 2020-06-23 10:26:25+03:00 [COMMAND_EXIT_CODE="0"]
