@@ -1,6 +1,5 @@
 FROM node:lts
 EXPOSE 5000
-RUN npm install -g --production serve
-USER node
-ENTRYPOINT [ "/usr/local/bin/serve" ]
-CMD [ " -s -l 5000 dist" ]
+WORKDIR /frontend
+RUN git clone --depth 1 https://github.com/docker-hy/frontend-example-docker.git . && npm install --no-optional
+CMD [ "npm", "start" ]
