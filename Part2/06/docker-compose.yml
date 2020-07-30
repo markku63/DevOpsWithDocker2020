@@ -1,0 +1,33 @@
+version: '3.5'
+
+services: 
+    frontend:
+        image: frontend-example
+        build: ../../Part1/10
+        environment: 
+            - API_URL=http://localhost:8000
+        ports:
+            - 5000:5000
+
+    backend:
+        image: backend-example
+        build: ../../Part1/11
+        environment: 
+            - FRONT_URL=http://localhost:5000
+            - REDIS=redis-cache
+            - DB_HOST=db
+            - DB_USERNAME=postgres
+            - DB_PASSWORD=qgXzmqYF
+        ports:
+            - 8000:8000
+        volumes: 
+            - ./logs.txt:/backend/logs.txt
+    
+    redis-cache:
+        image: redis:alpine
+
+    db:
+        image: postgres:alpine
+        restart: unless-stopped
+        environment: 
+            - POSTGRES_PASSWORD=qgXzmqYF
