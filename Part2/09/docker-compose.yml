@@ -25,6 +25,7 @@ services:
     
     redis-cache:
         image: redis:alpine
+        restart: unless-stopped
         volumes:
             - ./cache:/data
         command: redis-server --appendonly yes

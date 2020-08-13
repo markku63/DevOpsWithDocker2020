@@ -1,2 +1,3 @@
 In order to make all the buttons in the web application to work the definitions of environment variables `API_URL` and `FRONT_URL`were removed from docker-compose.yml.
-The requirement to return both Dockerfiles caused a change in the directory layout: former exercise 1.10 was copied to `frontend` and 1.11 was copied to `backend`, and the docker-compose file `build` directives were changed accordingly.
+
+The requirement to return both Dockerfiles caused a change in the directory layout: former exercise 1.10 was copied to `frontend` and 1.11 was copied to `backend`, and the docker-compose file `build` directives were changed accordingly. Dockerfiles are located in the subdirectories.
