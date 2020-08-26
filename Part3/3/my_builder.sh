@@ -8,7 +8,8 @@ then
     exit 64
 fi
 BUILD_DIR=$(mktemp -d .buildXXXXXXX)
-git clone --depth 1 --recurse-submodules --shallow-submodules $1 $BUILD_DIR
+REPO=$1
+git clone --depth 1 --recurse-submodules --shallow-submodules $REPO $BUILD_DIR
 pushd $BUILD_DIR
 if [ -e 'Dockerfile' ]
 then
