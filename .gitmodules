@@ -10,3 +10,6 @@
 [submodule "Part2/07/ml-kurkkumopo-training"]
 	path = Part2/07/ml-kurkkumopo-training
 	url = https://github.com/docker-hy/ml-kurkkumopo-training.git
+[submodule "Part3/2/docker-hy"]
+	path = Part3/2/docker-hy
+	url = https://github.com/markku63/docker-hy.git
