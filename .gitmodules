@@ -10,6 +10,3 @@
 [submodule "Part2/07/ml-kurkkumopo-training"]
 	path = Part2/07/ml-kurkkumopo-training
 	url = https://github.com/docker-hy/ml-kurkkumopo-training.git
-[submodule "Part3/2/mooc-wepa-20-projekti"]
-	path = Part3/2/mooc-wepa-20-projekti
-	url = https://github.com/markku63/mooc-wepa-20-projekti.git
