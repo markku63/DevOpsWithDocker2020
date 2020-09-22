@@ -1,0 +1,1 @@
+Based on exercise 2.10, modified backend/Dockerfile and frontend/Dockerfile to run as user "node" that's already set up in official node images. Reference: https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md
