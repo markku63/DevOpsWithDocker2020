@@ -1,4 +1,4 @@
-Modified frontend/Dockerfile to use multi-stage build. Size of image reduced to 98.7MB
+Modified frontend/Dockerfile to use multi-stage build. Size of image reduced to 98.7MB from 317MB.
 ```
 $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
